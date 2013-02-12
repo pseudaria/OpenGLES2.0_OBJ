@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'VertexBlending' target in the 'VertexBlending' project
-//
-
-#ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-#endif

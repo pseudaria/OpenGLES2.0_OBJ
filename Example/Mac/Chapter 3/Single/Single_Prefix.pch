@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'Single' target in the 'Single' project
-//
-
-#ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-#endif

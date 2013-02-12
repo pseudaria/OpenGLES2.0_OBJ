@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'VertexShaders' target in the 'VertexShaders' project
-//
-
-#ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-#endif

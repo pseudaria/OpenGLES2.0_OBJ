@@ -1,7 +1,0 @@
-{
-    IBClasses = (
-        {CLASS = Cube; LANGUAGE = ObjC; SUPERCLASS = NSOpenGLView; }, 
-        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
-    ); 
-    IBVersion = 1; 
-}
