@@ -1,0 +1,29 @@
+
+code_3_10.c,254
+#define GL_PI 5,60
+GLfloat clippingWidth;8,150
+GLfloat clippingHeight;9,173
+static GLfloat xRot 11,198
+static GLfloat yRot 12,226
+void RenderScene(17,312
+void SetupRC(62,1258
+void SpecialKeys(71,1399
+void ChangeSize(102,1855
+void main(150,2985
+
+code_3_9.c,254
+#define GL_PI 5,60
+GLfloat clippingWidth;8,150
+GLfloat clippingHeight;9,173
+static GLfloat xRot 11,198
+static GLfloat yRot 12,226
+void RenderScene(17,312
+void SetupRC(62,1258
+void SpecialKeys(71,1399
+void ChangeSize(102,1855
+void main(150,2985
+
+openglsb.h,70
+#define APIENTRY23,527
+#define INT_PTR 24,544
+#define Sleep(25,565

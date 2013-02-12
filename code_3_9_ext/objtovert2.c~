@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include"openglsb.h"
+
+void objtovert2(float vertex[][3],GLubyte p_tri[][3],GLubyte p_quad[][3])
+{
+  int i=0;
+  int k=0;
+  FILE *fp;
+  char c;
+  char s[256];
+  float bufferf[3];
+  int error_check;
+  GLubyte buffer3d[3];
+  GLubyte buffer4d[4];
+  fp = fopen("cup.obj","r");
+  if(fp==NULL)
+    return;
+  while(1)
+    {
+     if(feof(fp))
+	break;
+     fgets(s,40,fp);
+     if(s[0] == 'v') //|| s[0] == 'f')
+       {
+	 sscanf(s,"%c %f %f %f",&c,bufferf,bufferf+1,bufferf+2);
+	 printf("%c %f %f %f\n",c,bufferf[0],bufferf[1],bufferf[2]);
+	 vertex[i][0] = bufferf[0];
+	 vertex[i][1] = bufferf[1];
+	 vertex[i][2] = bufferf[2];
+	 i++;
+       }
+     if(s[0] == 'f')
+       {
+	 error_check=sscanf(s,"%c %d %d %d",&c,buffer3d,buffer3d+1,buffer3d+2);
+	 if(error_check == 0)
+	   {
+	   sscanf(s,"%c %d %d %d %d",&c,buffer4d,buffer4d+1,buffer4d+2, buffer4d+3);
+	   p_quad[k][0] = buffer4d[k][0];
+	   p_quad[k][1] = buffer4d[k][1];
+	   p_quad[k][2] = buffer4d[k][2];
+	   p_quad[k][3] = buffer4d[k][3];
+	   }
+	 p_tri[k][0] = buffer3d[k][0];
+	 p_tri[k][1] = buffer3d[k][1];
+	 p_tri[k][2] = buffer3d[k][2];
+       }
+    }
+  fclose(fp);
+}

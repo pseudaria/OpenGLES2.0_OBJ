@@ -1,0 +1,37 @@
+
+atof_tst1.c,16
+void main(4,38
+
+code_3_9.c,449
+#define GL_PI 5,60
+typedef GLfloat GLTVector3[GLTVector37,83
+GLfloat clippingWidth;10,182
+GLfloat clippingHeight;11,205
+static GLfloat xRot 13,230
+static GLfloat yRot 14,258
+GLTVector3 vCupVertexs[vCupVertexs16,287
+static GLubyte indexes_circle[indexes_circle17,316
+static GLubyte indexes_quad[indexes_quad49,935
+void RenderScene(180,4067
+void SetupRC(237,5449
+void SpecialKeys(246,5590
+void ChangeSize(277,6046
+void main(325,7176
+
+objtovert.c,21
+void objtovert(5,57
+
+objtovert_back.c,16
+void main(3,19
+
+objtovert_back2.c,16
+void main(3,19
+
+objtovert_back3.c,39
+void objtovert(7,59
+void main(47,671
+
+openglsb.h,70
+#define APIENTRY23,527
+#define INT_PTR 24,544
+#define Sleep(25,565

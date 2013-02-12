@@ -1,0 +1,5 @@
+myopenglapp: code_2_3.o
+		 gcc -o myopenglapp code_2_3.o -lglut -lGL -lGLU
+
+code_2_3.o: code_2_3.c openglsb.h
+	    gcc -c code_2_3.c
